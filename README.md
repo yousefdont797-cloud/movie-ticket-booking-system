@@ -6,19 +6,29 @@ ________________________________________________________________________________
 FEATURES
 
 1-allow the user to enter the movie name
+
 2-Stores the customer's name and number of tickets
+
 3-Allows users to calculate the price after applying a discount
+
 4-Calculates the total price based on the number of tickets
+
 5-Displays the movie name, customer name, ticket price, number of tickets, and total cost
 _______________________________________________________________________________________________________________________________________________________________________________
 OOP TOOLS USED
 
 1-Classes and Objects
+
 2-Encapsulation
+
 3-Constructors
+
 4-Destructors
+
 5-Inheritance
+
 6-Function Overloading
+
 7-Access Modifiers(private,puplic,protected)
 _______________________________________________________________________________________________________________________________________________________________________________
 PURPOSE OF THE PROGRAM
