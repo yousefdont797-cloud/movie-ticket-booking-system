@@ -3,26 +3,22 @@
 #include <string>
 using namespace std;
 
-// Base Class
 class Movie {
 protected:
     string movieName;
     double ticketPrice;
 
 public:
-    // Constructor
     Movie(string name, double price) {
         movieName = name;
         ticketPrice = price;
     }
 
-    // Virtual Function (Polymorphism)
     virtual void displayMovie() {
         cout << "Movie: " << movieName << endl;
         cout << "Ticket Price: $" << ticketPrice << endl;
     }
 
-    // Function Overloading
     double calculatePrice(int tickets) {
         return ticketPrice * tickets;
     }
@@ -31,20 +27,17 @@ public:
         return (ticketPrice * tickets) - discount;
     }
 
-    // Destructor
     virtual ~Movie() {
         cout << "Movie object destroyed." << endl;
     }
 };
 
-// Derived Class
 class Booking : public Movie {
 private:
     string customerName;
     int numberOfTickets;
 
 public:
-    // Constructor
     Booking(string name, double price,
             string customer, int tickets)
         : Movie(name, price) {
@@ -53,7 +46,6 @@ public:
         numberOfTickets = tickets;
     }
 
-    // Override Function (Polymorphism)
     void displayMovie() override {
         cout << "\n----- Booking Details -----" << endl;
         cout << "Customer: " << customerName << endl;
@@ -65,13 +57,11 @@ public:
              << calculatePrice(numberOfTickets) << endl;
     }
 
-    // Destructor
     ~Booking() {
         cout << "Booking object destroyed." << endl;
     }
 };
 
-// Main Function
 int main() {
 
     string movie, customer;
