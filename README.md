@@ -1,3 +1,6 @@
+📹movie ticket booking system🍿
+_______________________________________________
+
 INTRODUCTION
 
 The Movie Ticket Booking System is a simple C++ project designed to make the process of booking movie tickets easier. The system allows users to enter the movie name, ticket price, customer name, and number of tickets. It calculates the total price and displays the booking details
